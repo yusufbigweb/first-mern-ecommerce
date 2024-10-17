@@ -6,11 +6,14 @@ import About from './pagas/About'
 import Contact from './pagas/Contact'
 import Product from './pagas/Product'
 import Cart from './pagas/Cart'
+import Login from './pagas/Login'
+import PlaceOrder from './pagas/PlaceOrder'
+import Orders from './pagas/Orders'
 
 export const App = () => {
   return (
     <div className='px-4 sm:px-[5vw] md:px-[7vw] lg:px-[9vw]'>
-
+      
 <Routers>
 <Route path='/' element={<Home/>}/>
 <Route path='./Collection' element={<Collection/>} />
@@ -18,7 +21,9 @@ export const App = () => {
 <Route path='./contact' element={<Contact/>} />
 <Route path='./product/:productId' element={<Product/>} />
 <Route path='./cart' element={<Cart/>}/>
-
+<Route path='./login' element={<Login/>}/>
+<Route path='./place-order' element={<PlaceOrder/>}/>
+<Route path='./order' element={< Orders/>} />
 </Routers>
 
     </div>
