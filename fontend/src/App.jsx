@@ -9,11 +9,12 @@ import Cart from './pagas/Cart'
 import Login from './pagas/Login'
 import PlaceOrder from './pagas/PlaceOrder'
 import Orders from './pagas/Orders'
+import Navbar from './components/Navbar'
 
 export const App = () => {
   return (
     <div className='px-4 sm:px-[5vw] md:px-[7vw] lg:px-[9vw]'>
-      
+      <Navbar/>
 <Routers>
 <Route path='/' element={<Home/>}/>
 <Route path='./Collection' element={<Collection/>} />
